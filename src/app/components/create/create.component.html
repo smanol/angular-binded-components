@@ -1,0 +1,5 @@
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="inputValue" placeholder="Enter a value">
+    <button type="submit" [disabled]="!myForm.valid">Submit</button>
+  </form>
+
